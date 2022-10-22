@@ -33,18 +33,16 @@ const About2 = () => {
     maxHeight:"390px",
     borderRadius:"4px",
     overflowX:"auto",
-    marginTop:"200px"
+    marginTop:"100px"
     }}>
 {cars.map((val)=>(
 
             <Card  sx={{ minWidth: 275 , marginLeft:"10px"}}>
 
       <CardContent sx={{display:'flex'}}>
-
         <Typography sx={{fontSize:"20px"}}>
           {val.modelName}
         </Typography>
-
       </CardContent>
       
       <CardContent>

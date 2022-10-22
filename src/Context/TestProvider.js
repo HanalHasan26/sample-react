@@ -1,20 +1,14 @@
 
-import React, { createContext, useContext } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
 const TestContext = createContext()
 
 const TestProvider = ({children}) => {
 
-    const test = "vishak"
-
-    const data = [
-      {asjbja:"dsaj"},
-      {asjbja:"dsaj"},
-      {asjbja:"dsaj"},
-    ]
+  const [testData, setTestData] =useState('')
 
   return (
-<TestContext.Provider value={{test,data}}>
+<TestContext.Provider value={{testData,setTestData}}>
 {children}
 </TestContext.Provider>
   )

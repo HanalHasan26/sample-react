@@ -5,9 +5,8 @@ import cars from '../api/cars.json'
 // import datas from '../Data/example_1.json'
 const Deatails = () => {
     const carsId = useParams()
-
-    console.log(carsId.data); 
-      const data = cars.find((val)=> val.id)
+    console.log(carsId.data);
+      const data = cars.find((val)=> val.id === carsId.data)
 
   return (
     <Box display={'flex'} justifyContent='center'>
