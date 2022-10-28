@@ -1,18 +1,20 @@
-import { Button } from '@mui/material'
+import { Button, Container } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router'
 import About1 from './About1'
-import CarouselItem from './Carousel'
-import NavBar from './NavBar'
+import data from '../Data/Json'
+import { useSelector } from 'react-redux'
 
 const About = () => {
+  
+const {StateCount} = useSelector((state)=> state.count)
 
-const navigate = useNavigate()
-
+console.log(StateCount);
 
   return (
     <>
-          <NavBar/>
+<h3>{StateCount}</h3>
+
+<About1/>
 
     </>
   )

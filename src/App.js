@@ -11,7 +11,6 @@ import Home from './Pages/Home';
 function App() {
 
   return (
-    <div className="App">
 
 <Routes>
   <Route path='/' element={<About/>} />
@@ -23,8 +22,7 @@ function App() {
   <Route path='/sample' element={<Sample/>}/>
 </Routes>
 
-   
-    </div>
+
   );
 }
 

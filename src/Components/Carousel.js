@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Carousel.css'
 import datas from '../Data/example_1.json'
 import { useNavigate } from 'react-router';
+
 const CarouselItem = () => {
 
 const handleClickLeft =()=>{
