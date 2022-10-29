@@ -5,6 +5,7 @@ import About1 from './Components/About1';
 import About2 from './Components/About2';
 import DatasDetails from './Components/datasDetails';
 import Deatails from './Components/Deatails';
+import Dummydata from './Components/Dummydata';
 import Sample from './Components/Sample';
 import Home from './Pages/Home';
 
@@ -13,8 +14,8 @@ function App() {
   return (
 
 <Routes>
-  <Route path='/' element={<About/>} />
-  <Route path='/About1' element={<About1/>}/>
+  <Route path='/' element={<Dummydata/>} />
+  <Route path='/About' element={<About/>}/>
   <Route path='/About2' element={<About2/>}/>
   <Route path='/details/:data' element={<Deatails/>}/>
   <Route path='/Home' element={<Home/>}/>

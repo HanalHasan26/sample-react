@@ -8,13 +8,16 @@ const About = () => {
   
 const {StateCount} = useSelector((state)=> state.count)
 
-console.log(StateCount);
 
   return (
     <>
+    <div style={{display:"flex", justifyContent:"center"}}>
 <h3>{StateCount}</h3>
+    </div>
 
 <About1/>
+
+
 
     </>
   )
